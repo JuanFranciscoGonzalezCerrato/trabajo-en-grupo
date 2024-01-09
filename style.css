@@ -1,50 +1,37 @@
 
-body {
-    margin: 0;
+  body {
+    background-image: url('./FondoSobre.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #ff6b6b, #6b6bff);
+    margin: 0;
   }
-  #name, #name1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+
+  .card {
+   
+    text-align: center;
   }
-  .card, .card1 {
-    width: 250px;
-    min-height: 450px;
-    background: rgb(196, 161, 161); 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(15, 14, 14, 0.2); 
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+
+  #imgHealth {
+    width: 45%; 
+    margin: 0 auto; 
   }
-  
-  #imgHealth, #imgHealth1 {
-    width: 100%;
-    height: 100%; 
+
+  button {
+    background-color: #8b4513; /* Color de fondo marrón */
+    color: #ab91e7; /* Texto blanco */
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
   }
-  
-  #changeImage, #changeImage1 {
-    background-color: #007BFF; 
-    
-      margin-top: 30px;
-      color: white; 
-      font-weight: bold;
-      text-align: center; 
-      text-decoration: none; 
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer; 
-      border-radius: 12px; 
+
+  button:hover {
+    background-color: #654321; /* Cambio de color al pasar el ratón */
   }
- .vs {
-    font-size: 30px;
-    color: aliceblue;
-    margin: 20px;
- }
+
