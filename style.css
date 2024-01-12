@@ -1,37 +1,83 @@
+body {
+  height: 100vh;
 
-  body {
-    background-image: url('./FondoSobre.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
+}
+main{
+  
+  background-image: url('./FondoSobre.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+#initialContainer {
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .card {
-   
-    text-align: center;
-  }
+#envelopeCard {
+  border: none;
+  text-align: center;
+}
 
-  #imgHealth {
-    width: 45%; 
-    margin: 0 auto; 
-  }
+#imgEnvelope {
+  width: 150px;
+  margin: 0 auto;
+}
 
-  button {
-    background-color: #8b4513; /* Color de fondo marrón */
-    color: #ab91e7; /* Texto blanco */
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
-  }
+#imgHealth1,
+#imgHealth2,
+#imgHealth3,
+#imgHealth4,
+#imgHealth5
+ {
+  width: 100px;
+}
 
-  button:hover {
-    background-color: #654321; /* Cambio de color al pasar el ratón */
-  }
+#name1,
+#name2,
+#name3,
+#name4,
+#name5
+ {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
 
+#imgEnvelope {
+  width: 45%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #8b4513;
+  /* Color de fondo marrón */
+  color: #ab91e7;
+  /* Texto blanco */
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Transición suave de color de fondo */
+}
+
+button:hover {
+  background-color: #654321;
+  /* Cambio de color al pasar el ratón */
+}
+#fiveCards {
+  display: none;
+  
+
+}
+
+.card {
+  margin: 10px;
+  display: flex;
+}
