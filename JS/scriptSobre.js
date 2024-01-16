@@ -1,22 +1,13 @@
-let elementImage1 = document.getElementById("imgHealth1");
-let elementName1 = document.getElementById("name1");
+let elementImage1 = document.getElementById("card1");
+let elementImage2 = document.getElementById("card2");
+let elementImage3 = document.getElementById("card3");
+let elementImage4 = document.getElementById("card4");
+let elementImage5 = document.getElementById("card5");
 
-let elementImage2 = document.getElementById("imgHealth2");
-let elementName2= document.getElementById("name2");
+let initialCard = document.getElementById("container");
+let fiveCards = document.getElementById("contain_all")
 
-let elementImage3 = document.getElementById("imgHealth3");
-let elementName3= document.getElementById("name3");
-
-let elementImage4 = document.getElementById("imgHealth4");
-let elementName4= document.getElementById("name4");
-
-let elementImage5 = document.getElementById("imgHealth5");
-let elementName5 = document.getElementById("name5");
-
-let initialCard = document.getElementById("initialCard");
-let fiveCards = document.getElementById("fiveCards")
-
-let button = document.getElementById("fiveImage");
+let button = document.getElementById("boton");
 
 const url = 'https://omgvamp-hearthstone-v1.p.rapidapi.com/cardbacks';
 const options = {
@@ -26,6 +17,11 @@ const options = {
 		'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com'
 	}
 };
+
+$(".card").click(function () {
+    $(this).toggleClass("flipped");
+    $(".shadow").toggleClass("bigger");
+  });
 
 function getRamdom() {
     fetch(url, options)

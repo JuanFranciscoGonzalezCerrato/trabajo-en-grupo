@@ -79,7 +79,72 @@ button:hover {
 
 }
 
-.card {
+.packet {
 	margin: 10px;
 	display: flex;
 }
+
+.contain_all {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	position: relative;
+	width: 163px;
+	height: 244px;
+	perspective: 1000px;
+	margin: 0 10px;
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	transform: rotateX(70deg) rotate(-40deg);
+}
+
+.flipped {
+	transform: rotateX(10deg) rotate(-10deg) rotateY(150deg) translateZ(-90px) translateY(-50%) translateX(-50%);
+}
+
+.card div {
+	backface-visibility: hidden;
+	margin: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bigger {
+	transform: translateY(-88%) rotateX(70deg) rotate(-40deg);
+	box-shadow: 0 0 40px 40px #202020;
+	width: 160px;
+	height: 260px;
+	opacity: .1;
+}
+
+.front {
+	backface-visibility: hidden;
+	background: url(http://www.hearthstonetopdecks.com/wp-content/uploads/2014/06/card-back-default.png);
+	background-size: cover;
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	background: url(http://media-hearth.cursecdn.com/avatars/147/957/264.png);
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+
+#fiveImage {
+	height: 30px;
+	width: 100px;}
