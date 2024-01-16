@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url('../IMG/Fondo-App.jpg');
+	background-size: cover;
+
+	background-position: center center;	
+}
+html {
+	
+	height: 100%;
+}
+
+header {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.img {
+	background-size: 100% 100%;
+	background-color: grey;
+	height: 100px;
+	width: 100px;
+}

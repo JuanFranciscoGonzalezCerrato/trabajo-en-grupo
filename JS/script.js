@@ -1,3 +1,5 @@
+
+
 const url = 'https://omgvamp-hearthstone-v1.p.rapidapi.com/info';
 const options = {
 	method: 'GET',
@@ -6,18 +8,15 @@ const options = {
 		'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com'
 	}
 };
-
-
-
-
 async function verify(){
-	try {
-		const response = await fetch(url, options);
-		const result = await response.text();
-		console.log(result);
-	} catch (error) {
-		console.error(error);
-	}
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
 }
 
 verify();
