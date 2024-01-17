@@ -53,6 +53,12 @@ button.addEventListener("click", function() {
     window.getRamdom();
     initialCard.style.display = "none";
     fiveCards.style.display = "flex";
+
+    $('.card').click(function() {
+        $(this).toggleClass('flipped');
+        $('.shadow').toggleClass('bigger');
+      })
+    
 });
 
 
